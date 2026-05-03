@@ -20,7 +20,7 @@ st.markdown("---")
 @st.cache_data
 def load_data():
     # Load directly from GitHub raw URL so it works on Streamlit Cloud
-    url = "https://raw.githubusercontent.com/TechTitan2/Amazon-Reviews-Streamlit/main/sample_reviews.xlsx"
+    url = "https://raw.githubusercontent.com/TechTitan2/Amazon-Reviews-Streamlit/main/sample.reviews.xlsx"
     df = pd.read_excel(url, sheet_name="Reviews")
 
     # Convert Unix timestamp to datetime
